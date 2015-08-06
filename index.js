@@ -1,3 +1,5 @@
 var app = require('./server/server.js');
 
-app.listen(process.env.BBSERVERPORT || 8000);
+var port = process.env.BBSERVERPORT || 8000;
+app.listen(port);
+console.log('listening on', port);
