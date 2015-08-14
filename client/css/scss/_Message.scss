@@ -1,0 +1,16 @@
+.Message { flex: 1 100%; padding: 16px; border: 1px solid red; border-radius: 5px; }
+.Message__list { margin: 0; padding: 0; }
+.Message__listItem { margin: 0 0 16px; border-bottom: 1px solid red; list-style: none;
+  &:nth-last-child(1) { border-bottom: 0; }
+}
+.Message__listItemH5 { margin: 0 0 8px; }
+.Message__listItemCreatedAt { margin: 0 0 8px; font-size: 12px; }
+.Message__listItemText { margin: 0 0 16px; }
+.Message__composer { width: 100%; border: 1px solid red; }
+
+@media #{$tablet} {
+  .Message { flex: auto; }
+}
+
+@media #{$desktop} {
+}

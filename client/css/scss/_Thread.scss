@@ -1,0 +1,9 @@
+.Thread { flex: 1 100%; margin: 0; padding: 0; border: 1px solid red; border-radius: 5px; list-style: none; }
+.Thread-listItem { padding: 16px; cursor: pointer; }
+
+@media #{$tablet} {
+  .Thread { flex: 0 1 240px; }
+}
+
+@media #{$desktop} {
+}
