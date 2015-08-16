@@ -1,0 +1,12 @@
+.Thread { flex: 1 100%; margin: 0; padding: 0; list-style: none; background: $slick-bg3; overflow: auto; }
+[class^="Thread__listItem--"],
+[class*=" Thread__listItem--"] { padding: 8px; cursor: pointer;
+  &:hover { background: $slick-bg2; }
+}
+
+@media #{$tablet} {
+  .Thread { flex: 0 0 240px; }
+}
+
+@media #{$desktop} {
+}

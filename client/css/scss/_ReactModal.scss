@@ -1,0 +1,5 @@
+.Modal__closeBtn { float: right; border: 0; background: none; line-height: 24px; font-size: 32px; }
+
+.ReactModalPortal { }
+.ReactModal__Overlay { display: flex; align-items: center; justify-content: center; background: none !important; cursor: pointer; }
+.ReactModal__Content { flex: 1; position: static !important; max-width: 420px; border: 0 !important; border-radius: 0 !important; background: rgba(0, 0, 0, 0.8) !important; color: $slick-text; cursor: auto; }

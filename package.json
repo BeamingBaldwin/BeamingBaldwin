@@ -1,28 +1,58 @@
 {
   "name": "beaming-baldwin",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "author": "",
   "description": "MKS20 Greenfield Project",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
+  "main": "client/js/main.js",
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "firebase": "^2.2.9",
+    "flux": "^2.0.3",
+    "keymirror": "~0.1.1",
+    "lodash": "^3.10.1",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3",
+    "react-modal": "^0.3.0",
+    "react-router": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "browser-sync": "^2.8.2",
+    "browserify": "^11.0.1",
+    "envify": "^3.4.0",
+    "eslint": "^1.0.0",
+    "eslint-config-airbnb": "0.0.7",
+    "eslint-plugin-react": "^3.2.0",
+    "jest-cli": "^0.4.3",
+    "node-sass": "^3.2.0",
+    "prettyjson": "^1.1.3",
+    "reactify": "^1.1.1",
+    "uglify-js": "~2.4.24",
+    "watchify": "^3.3.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watchify & npm run browsersync & npm run sass",
+    "watchify": "watchify -o client/js/bundle.js -v -d client/js/main.js",
+    "browsersync": "browser-sync start --server client --files 'client/js/*.js, client/css/*.css, client/*.html'",
+    "sass": "node-sass --watch client/css/scss/ client/css/styles.css --output-style compressed",
+    "test": "jest --verbose"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BeamingBaldwin/BeamingBaldwin.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BeamingBaldwin/BeamingBaldwin/issues"
   },
   "homepage": "https://github.com/BeamingBaldwin/BeamingBaldwin#readme",
-  "devDependencies": {
-    "babel-eslint": "^4.0.5",
-    "eslint": "^1.0.0",
-    "eslint-config-airbnb": "0.0.7",
-    "eslint-plugin-react": "^3.2.0"
+  "jest": {
+    "rootDir": "./client/js"
   }
 }
