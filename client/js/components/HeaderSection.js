@@ -3,7 +3,7 @@ var HeaderSection;
 var Modal = require('react-modal');
 var NewThreadForm = require('./NewThreadForm');
 var ThreadStore = require('../stores/ThreadStore');
-var api = require('../utils/API.js');
+var API = require('../utils/API.js');
 var ThreadActionCreators = require('../actions/ThreadActionCreators');
 var ModifyParticipants = require('./ModifyParticipants');
 
@@ -115,7 +115,7 @@ HeaderSection = React.createClass({
 
   _leaveThread: function() {
     var user = localStorage.email || 'Bobby Tables';
-    api.removeUserFromThread(user, this.state.threadId);
+    API.removeUserFromThread(user, this.state.threadId);
     ThreadActionCreators.clickThread(ThreadStore.getParentThreadId());
   },
 });

@@ -15,7 +15,7 @@ var getStateFromStores = function() {
 var ThreadSection = React.createClass({
 
   propTypes: {
-    node: ReactPropTypes.object,
+    node: ReactPropTypes.array,
   },
 
   getInitialState: function() {

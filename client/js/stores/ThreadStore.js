@@ -17,7 +17,7 @@ var _getLastThreadId = function(_threads) {
 };
 
 var _getParentThreadId = function() {
-  return _threads[_currThreadID] && _threads[_currThreadID].info.parentId || 0;
+  return _threads[_currThreadID] && _threads[_currThreadID].info.parentId || '0';
 };
 
 var _retrieveInfoForThread = function(thread) {
