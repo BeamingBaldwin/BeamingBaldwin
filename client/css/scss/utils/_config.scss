@@ -1,0 +1,32 @@
+// colors
+$black: #000;
+$white: #fff;
+$midnight-blue: #2c3e50;
+$wet-asphault: #34495e;
+$concrete: #95a5a6;
+$abestos: #7f8c8d;
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+$aqualicious: #00E9C3;
+$green: #D1E4AA;
+$yellow: #FFEABA;
+$strawberry-cream: #FFB0C3;
+$strawberry: #FF458F;
+
+$slick-bg: $wet-asphault;
+$slick-bg2: $midnight-blue;
+$slick-bg3: darken($midnight-blue, 5%);
+$slick-text: $clouds;
+$slick-text2: $silver;
+
+// @media queries
+$tablet: "only screen and (min-width : 321px)";
+$desktop: "only screen and (min-width : 768px)";
+
+// susy
+$susy: (
+  global-box-sizing: border-box,
+   use-custom: (
+    rem: true
+  )
+);

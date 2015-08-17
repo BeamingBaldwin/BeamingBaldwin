@@ -1,0 +1,10 @@
+.Participants { min-width: 240px; background: $slick-bg3; overflow: auto; }
+.Participants__h2 { margin: 16px; }
+.Participants__ul { margin: 0; padding: 0; font-size: 14px; list-style: none; }
+.Participants__li { display: block; padding: 16px; border-bottom: 1px solid $slick-bg; }
+
+@media #{$tablet} {
+}
+
+@media #{$desktop} {
+}

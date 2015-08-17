@@ -1,0 +1,12 @@
+.UserSelector {}
+.UserSelector__container { max-height: 200px; margin: 0 0 16px; padding: 16px; overflow-y: scroll; background: $slick-bg; }
+
+%UserSelector__toggleAllBtn { border: 0; border-radius: 3px; margin: 0 16px 0 0; padding: 0 16px; background: $slick-bg2; line-height: 32px; text-transform: uppercase; font-size: 12px; font-family: 'Montserrat', sans-serif; color: $slick-text; user-select: none;
+  &:hover { background: lighten($slick-bg2, 10%); color: darken($slick-text, 10%); }
+}
+.UserSelector__toggleAllBtn { @extend %UserSelector__toggleAllBtn; margin: 0 0 8px; }
+.UserSelector__list { margin: 0; padding: 0; list-style: none; }
+.UserSelect__label { cursor: pointer; }
+.UserSelect__li { margin: 8px 0; }
+.UserSelect__checkbox { margin: 0 8px 0 0; }
+.UserSelector__toggleAll { font-size:80%; font-style: italic; }

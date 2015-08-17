@@ -1,0 +1,13 @@
+.Header { display: flex; align-items: center; height: 48px; padding: 0 24px; background: $slick-bg; }
+
+%Header__btn { border: 0; border-radius: 3px; margin: 0 16px 0 0; padding: 0 16px; background: $slick-bg2; line-height: 32px; text-transform: uppercase; font-size: 12px; font-family: 'Montserrat', sans-serif; color: $slick-text; user-select: none;
+  &:hover { background: lighten($slick-bg2, 10%); color: darken($slick-text, 10%); }
+  // &:last-child { margin-right: 0; }
+}
+.Header__newThreadBtn,
+.Header__newChildThreadBtn,
+.Header__leaveThreadBtn,
+.Header__modifyParticipantsBtn { @extend %Header__btn; }
+
+.Header__leaveThreadBtn { margin-left: auto; margin-right: 16px; }
+.Header__modifyParticipantsBtn { margin-right: 0; }
