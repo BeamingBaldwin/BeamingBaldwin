@@ -1,0 +1,10 @@
+.Splash__container { flex: 1; flex-direction: column; display: flex; background: url(../img/home-bg.jpg) no-repeat center/cover; overflow: auto; }
+.Splash { z-index: 1; flex: 1; max-width: 800px; margin: calc(100vh - 240px) auto 0; padding: 48px; background: rgba(0, 0, 0, 0.8);
+  // &:before { content: ""; display: block; position: fixed; top: 68px; left: 0; width: 100%; height: 100%;  }
+}
+.Splash__h2 { margin: 0 0 24px; text-align: center; font-size: 48px; }
+.Splash__h3 { margin: 0; }
+.Splash__h4 { height: 100px; text-align: center; font-size: 32px; }
+.Splash__p { margin: 0 0 48px; }
+.Splash__instructions { width: 240px; margin: 0 auto; }
+.Splash__blockquote { margin: 0 0 48px; text-align: center; font-size: 24px; font-style: italic; }

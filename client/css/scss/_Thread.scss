@@ -1,0 +1,18 @@
+.Thread { flex: 1 100%; margin: 0; padding: 0; list-style: none; background: $slick-bg3; overflow: auto; }
+.Thread__h2 { margin: 16px; }
+.Thread__ul { margin: 0; padding: 0; list-style: none; }
+[class^="Thread__listItem--"],
+[class*=" Thread__listItem--"] { padding: 0 0 0 24px; font-size: 12px; cursor: pointer; }
+.Thread__listItem--0 { padding: 0; border-bottom: 1px solid $slick-bg; font-size: 14px; font-weight: 700;
+  &:last-child(1) { border: 0; }
+}
+.Thread__listItemTitle { display: block; padding: 16px;
+  &:hover { background: $slick-bg2; }
+}
+
+@media #{$tablet} {
+  .Thread { flex: 0; min-width: 240px; }
+}
+
+@media #{$desktop} {
+}
